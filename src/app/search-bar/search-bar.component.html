@@ -1,0 +1,9 @@
+<div class="container">
+    <p>Please insert a url from Youtube</p>
+    <input (keyup)="onKey($event)" type="url" id="video-search" name="sv">
+    <button (click)="onClick()" >Search</button>   
+</div>
+<div>
+    <iframe [attr.src]="safeUrl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>hjh</iframe>
+</div>
+ 
